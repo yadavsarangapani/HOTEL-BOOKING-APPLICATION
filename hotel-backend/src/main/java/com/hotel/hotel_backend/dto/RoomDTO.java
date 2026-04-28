@@ -2,7 +2,6 @@ package com.hotel.hotel_backend.dto;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.*;
-
 import java.math.BigDecimal;
 
 @Data
@@ -10,6 +9,7 @@ import java.math.BigDecimal;
 @AllArgsConstructor
 @Builder
 @JsonInclude(JsonInclude.Include.NON_NULL)
+// dto ensures the security of the application
 public class RoomDTO {
     private Long id;
     private Long hotelId;
