@@ -1,0 +1,435 @@
+2026-04-03 00:00:00 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-03 00:00:00 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 39 ms. Found 4 JPA repository interfaces.
+2026-04-03 00:00:00 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-04-03 00:00:00 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-03 00:00:00 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-04-03 00:00:00 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-03 00:00:00 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 935 ms
+2026-04-03 00:00:01 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-03 00:00:01 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+2026-04-03 00:00:01 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-04-03 00:00:01 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-03 00:00:01 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-03 00:00:01 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@636dbfe7
+2026-04-03 00:00:01 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-03 00:00:01 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-03 00:00:01 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-03 00:00:02 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-03 00:00:02 [main] DEBUG c.h.h.config.JWTAuthFilter - Filter 'JWTAuthFilter' configured for use
+2026-04-03 00:00:02 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-03 00:00:02 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-03 00:00:02 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@78ec5e18, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@15962623, org.springframework.security.web.context.SecurityContextHolderFilter@250284ae, org.springframework.security.web.header.HeaderWriterFilter@27d40ca5, org.springframework.web.filter.CorsFilter@2f405c13, org.springframework.security.web.authentication.logout.LogoutFilter@60ca607, com.hotel.hotel_backend.config.JWTAuthFilter@3c717ef2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@24d6355c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@69e4e90b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@58d7a3bb, org.springframework.security.web.session.SessionManagementFilter@911a6cd, org.springframework.security.web.access.ExceptionTranslationFilter@229762ab, org.springframework.security.web.access.intercept.AuthorizationFilter@47955046]
+2026-04-03 00:00:03 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path ''
+2026-04-03 00:00:03 [main] INFO  c.h.h.HotelBackendApplication - Started HotelBackendApplication in 3.449 seconds (process running for 3.668)
+2026-04-03 00:00:06 [http-nio-8081-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-03 00:00:06 [http-nio-8081-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-04-03 00:00:06 [http-nio-8081-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2026-04-03 00:00:06 [http-nio-8081-exec-4] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: krish@gmail.com
+2026-04-03 00:00:06 [http-nio-8081-exec-6] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: krish@gmail.com
+2026-04-03 00:00:06 [http-nio-8081-exec-4] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: krish@gmail.com for URI: /api/hotels
+2026-04-03 00:00:06 [http-nio-8081-exec-6] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: krish@gmail.com for URI: /api/hotels/locations
+2026-04-03 00:00:06 [http-nio-8081-exec-6] WARN  o.s.w.s.h.HandlerMappingIntrospector - Cache miss for REQUEST dispatch to '/api/hotels/locations' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
+2026-04-03 00:00:06 [http-nio-8081-exec-4] INFO  c.h.h.controller.HotelController - GET /api/hotels
+2026-04-03 00:00:06 [http-nio-8081-exec-4] INFO  c.h.h.service.HotelService - Fetched 50 hotels
+2026-04-03 00:00:06 [http-nio-8081-exec-8] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: krish@gmail.com
+2026-04-03 00:00:06 [http-nio-8081-exec-8] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: krish@gmail.com for URI: /api/hotels/locations
+2026-04-03 00:00:06 [http-nio-8081-exec-9] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: krish@gmail.com
+2026-04-03 00:00:06 [http-nio-8081-exec-9] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: krish@gmail.com for URI: /api/hotels
+2026-04-03 00:00:06 [http-nio-8081-exec-9] INFO  c.h.h.controller.HotelController - GET /api/hotels
+2026-04-03 00:00:06 [http-nio-8081-exec-9] INFO  c.h.h.service.HotelService - Fetched 50 hotels
+2026-04-03 00:03:11 [http-nio-8081-exec-6] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: krish@gmail.com
+2026-04-03 00:03:12 [http-nio-8081-exec-6] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: krish@gmail.com for URI: /api/hotels/4
+2026-04-03 00:03:12 [http-nio-8081-exec-6] INFO  c.h.h.controller.HotelController - GET /api/hotels/4
+2026-04-03 00:03:12 [http-nio-8081-exec-4] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: krish@gmail.com
+2026-04-03 00:03:12 [http-nio-8081-exec-4] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: krish@gmail.com for URI: /api/hotels/4
+2026-04-03 00:03:12 [http-nio-8081-exec-4] INFO  c.h.h.controller.HotelController - GET /api/hotels/4
+2026-04-03 00:06:32 [http-nio-8081-exec-10] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: krish@gmail.com
+2026-04-03 00:06:32 [http-nio-8081-exec-10] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: krish@gmail.com for URI: /api/hotels/4
+2026-04-03 00:06:32 [http-nio-8081-exec-10] INFO  c.h.h.controller.HotelController - GET /api/hotels/4
+2026-04-03 00:06:32 [http-nio-8081-exec-7] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: krish@gmail.com
+2026-04-03 00:06:32 [http-nio-8081-exec-7] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: krish@gmail.com for URI: /api/hotels/4
+2026-04-03 00:06:32 [http-nio-8081-exec-7] INFO  c.h.h.controller.HotelController - GET /api/hotels/4
+2026-04-03 00:10:43 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-03 00:10:43 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-04-03 00:10:43 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-04-03 00:10:53 [main] INFO  c.h.h.HotelBackendApplication - Starting HotelBackendApplication using Java 21.0.10 with PID 25840 (C:\Users\girid\Desktop\HotelBooking\hotel-backend\target\classes started by girid in C:\Users\girid\Desktop\HotelBooking\hotel-backend)
+2026-04-03 00:10:53 [main] DEBUG c.h.h.HotelBackendApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-04-03 00:10:53 [main] INFO  c.h.h.HotelBackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-03 00:10:53 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-03 00:10:53 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 40 ms. Found 4 JPA repository interfaces.
+2026-04-03 00:10:54 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-04-03 00:10:54 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-03 00:10:54 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-04-03 00:10:54 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-03 00:10:54 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 890 ms
+2026-04-03 00:10:54 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-03 00:10:54 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+2026-04-03 00:10:54 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-04-03 00:10:54 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-03 00:10:54 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-03 00:10:54 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6451a288
+2026-04-03 00:10:54 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-03 00:10:54 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-03 00:10:55 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-03 00:10:55 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-03 00:10:55 [main] DEBUG c.h.h.config.JWTAuthFilter - Filter 'JWTAuthFilter' configured for use
+2026-04-03 00:10:55 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-03 00:10:56 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-03 00:10:56 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5ecc8114, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6d7e973b, org.springframework.security.web.context.SecurityContextHolderFilter@2e48f0a1, org.springframework.security.web.header.HeaderWriterFilter@105b12e7, org.springframework.web.filter.CorsFilter@47955046, org.springframework.security.web.authentication.logout.LogoutFilter@791ff1b9, com.hotel.hotel_backend.config.JWTAuthFilter@3f030217, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@911a6cd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@360c25f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5bcc2416, org.springframework.security.web.session.SessionManagementFilter@280f0c37, org.springframework.security.web.access.ExceptionTranslationFilter@13ea4f97, org.springframework.security.web.access.intercept.AuthorizationFilter@5e6dcfa]
+2026-04-03 00:10:56 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path ''
+2026-04-03 00:10:56 [main] INFO  c.h.h.HotelBackendApplication - Started HotelBackendApplication in 3.476 seconds (process running for 3.687)
+2026-04-03 00:11:23 [http-nio-8081-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-03 00:11:23 [http-nio-8081-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-04-03 00:11:23 [http-nio-8081-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2026-04-03 00:11:23 [http-nio-8081-exec-5] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: krish@gmail.com
+2026-04-03 00:11:23 [http-nio-8081-exec-2] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: krish@gmail.com
+2026-04-03 00:11:23 [http-nio-8081-exec-5] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: krish@gmail.com for URI: /api/hotels/locations
+2026-04-03 00:11:23 [http-nio-8081-exec-2] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: krish@gmail.com for URI: /api/hotels
+2026-04-03 00:11:23 [http-nio-8081-exec-5] WARN  o.s.w.s.h.HandlerMappingIntrospector - Cache miss for REQUEST dispatch to '/api/hotels/locations' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
+2026-04-03 00:11:23 [http-nio-8081-exec-2] INFO  c.h.h.controller.HotelController - GET /api/hotels
+2026-04-03 00:11:23 [http-nio-8081-exec-2] INFO  c.h.h.service.HotelService - Fetched 50 hotels
+2026-04-03 00:11:23 [http-nio-8081-exec-3] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: krish@gmail.com
+2026-04-03 00:11:23 [http-nio-8081-exec-3] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: krish@gmail.com for URI: /api/hotels/locations
+2026-04-03 00:11:24 [http-nio-8081-exec-4] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: krish@gmail.com
+2026-04-03 00:11:24 [http-nio-8081-exec-4] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: krish@gmail.com for URI: /api/hotels
+2026-04-03 00:11:24 [http-nio-8081-exec-4] INFO  c.h.h.controller.HotelController - GET /api/hotels
+2026-04-03 00:11:24 [http-nio-8081-exec-4] INFO  c.h.h.service.HotelService - Fetched 50 hotels
+2026-04-03 00:11:30 [http-nio-8081-exec-6] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: krish@gmail.com
+2026-04-03 00:11:30 [http-nio-8081-exec-6] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: krish@gmail.com for URI: /api/rooms/search
+2026-04-03 00:11:30 [http-nio-8081-exec-6] INFO  c.h.h.controller.HotelController - GET /api/rooms/search?location=Madurai&checkIn=2026-04-02&checkOut=2026-04-03
+2026-04-03 00:11:30 [http-nio-8081-exec-6] INFO  c.h.h.service.HotelService - Found 13 available rooms in Madurai from 2026-04-02 to 2026-04-03
+2026-04-03 00:11:34 [http-nio-8081-exec-7] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: krish@gmail.com
+2026-04-03 00:11:34 [http-nio-8081-exec-7] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: krish@gmail.com for URI: /api/hotels/4
+2026-04-03 00:11:34 [http-nio-8081-exec-7] INFO  c.h.h.controller.HotelController - GET /api/hotels/4
+2026-04-03 00:11:34 [http-nio-8081-exec-8] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: krish@gmail.com
+2026-04-03 00:11:34 [http-nio-8081-exec-8] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: krish@gmail.com for URI: /api/hotels/4
+2026-04-03 00:11:34 [http-nio-8081-exec-8] INFO  c.h.h.controller.HotelController - GET /api/hotels/4
+2026-04-03 00:11:52 [http-nio-8081-exec-9] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: krish@gmail.com
+2026-04-03 00:11:52 [http-nio-8081-exec-10] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: krish@gmail.com
+2026-04-03 00:11:52 [http-nio-8081-exec-10] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: krish@gmail.com for URI: /api/hotels/locations
+2026-04-03 00:11:52 [http-nio-8081-exec-9] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: krish@gmail.com for URI: /api/hotels
+2026-04-03 00:11:52 [http-nio-8081-exec-9] INFO  c.h.h.controller.HotelController - GET /api/hotels
+2026-04-03 00:11:52 [http-nio-8081-exec-5] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: krish@gmail.com
+2026-04-03 00:11:52 [http-nio-8081-exec-5] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: krish@gmail.com for URI: /api/hotels/locations
+2026-04-03 00:11:52 [http-nio-8081-exec-9] INFO  c.h.h.service.HotelService - Fetched 50 hotels
+2026-04-03 00:11:52 [http-nio-8081-exec-2] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: krish@gmail.com
+2026-04-03 00:11:52 [http-nio-8081-exec-2] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: krish@gmail.com for URI: /api/hotels
+2026-04-03 00:11:52 [http-nio-8081-exec-2] INFO  c.h.h.controller.HotelController - GET /api/hotels
+2026-04-03 00:11:52 [http-nio-8081-exec-2] INFO  c.h.h.service.HotelService - Fetched 50 hotels
+2026-04-03 00:12:04 [http-nio-8081-exec-3] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: krish@gmail.com
+2026-04-03 00:12:04 [http-nio-8081-exec-3] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: krish@gmail.com for URI: /api/rooms/search
+2026-04-03 00:12:04 [http-nio-8081-exec-3] INFO  c.h.h.controller.HotelController - GET /api/rooms/search?location=Madurai&checkIn=2026-04-02&checkOut=2026-04-03
+2026-04-03 00:12:04 [http-nio-8081-exec-3] INFO  c.h.h.service.HotelService - Found 13 available rooms in Madurai from 2026-04-02 to 2026-04-03
+2026-04-03 00:12:10 [http-nio-8081-exec-4] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: krish@gmail.com
+2026-04-03 00:12:10 [http-nio-8081-exec-4] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: krish@gmail.com for URI: /api/hotels/4
+2026-04-03 00:12:10 [http-nio-8081-exec-4] INFO  c.h.h.controller.HotelController - GET /api/hotels/4
+2026-04-03 00:12:10 [http-nio-8081-exec-1] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: krish@gmail.com
+2026-04-03 00:12:10 [http-nio-8081-exec-1] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: krish@gmail.com for URI: /api/hotels/4
+2026-04-03 00:12:10 [http-nio-8081-exec-1] INFO  c.h.h.controller.HotelController - GET /api/hotels/4
+2026-04-03 00:12:18 [http-nio-8081-exec-6] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: krish@gmail.com
+2026-04-03 00:12:18 [http-nio-8081-exec-7] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: krish@gmail.com
+2026-04-03 00:12:18 [http-nio-8081-exec-7] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: krish@gmail.com for URI: /api/hotels/locations
+2026-04-03 00:12:18 [http-nio-8081-exec-6] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: krish@gmail.com for URI: /api/hotels
+2026-04-03 00:12:18 [http-nio-8081-exec-6] INFO  c.h.h.controller.HotelController - GET /api/hotels
+2026-04-03 00:12:18 [http-nio-8081-exec-8] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: krish@gmail.com
+2026-04-03 00:12:18 [http-nio-8081-exec-6] INFO  c.h.h.service.HotelService - Fetched 50 hotels
+2026-04-03 00:12:18 [http-nio-8081-exec-8] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: krish@gmail.com for URI: /api/hotels/locations
+2026-04-03 00:12:18 [http-nio-8081-exec-10] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: krish@gmail.com
+2026-04-03 00:12:18 [http-nio-8081-exec-10] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: krish@gmail.com for URI: /api/hotels
+2026-04-03 00:12:18 [http-nio-8081-exec-10] INFO  c.h.h.controller.HotelController - GET /api/hotels
+2026-04-03 00:12:18 [http-nio-8081-exec-10] INFO  c.h.h.service.HotelService - Fetched 50 hotels
+2026-04-03 00:12:26 [http-nio-8081-exec-9] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: krish@gmail.com
+2026-04-03 00:12:26 [http-nio-8081-exec-9] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: krish@gmail.com for URI: /api/rooms/search
+2026-04-03 00:12:26 [http-nio-8081-exec-9] INFO  c.h.h.controller.HotelController - GET /api/rooms/search?location=Salem&checkIn=2026-04-02&checkOut=2026-04-03
+2026-04-03 00:12:26 [http-nio-8081-exec-9] INFO  c.h.h.service.HotelService - Found 9 available rooms in Salem from 2026-04-02 to 2026-04-03
+2026-04-03 00:12:38 [http-nio-8081-exec-4] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: krish@gmail.com
+2026-04-03 00:12:38 [http-nio-8081-exec-4] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: krish@gmail.com for URI: /api/hotels/43
+2026-04-03 00:12:38 [http-nio-8081-exec-4] INFO  c.h.h.controller.HotelController - GET /api/hotels/43
+2026-04-03 00:12:39 [http-nio-8081-exec-1] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: krish@gmail.com
+2026-04-03 00:12:39 [http-nio-8081-exec-1] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: krish@gmail.com for URI: /api/hotels/43
+2026-04-03 00:12:39 [http-nio-8081-exec-1] INFO  c.h.h.controller.HotelController - GET /api/hotels/43
+2026-04-03 00:14:00 [http-nio-8081-exec-10] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: krish@gmail.com
+2026-04-03 00:14:00 [http-nio-8081-exec-5] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: krish@gmail.com
+2026-04-03 00:14:00 [http-nio-8081-exec-5] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: krish@gmail.com for URI: /api/hotels
+2026-04-03 00:14:00 [http-nio-8081-exec-10] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: krish@gmail.com for URI: /api/hotels/locations
+2026-04-03 00:14:00 [http-nio-8081-exec-5] INFO  c.h.h.controller.HotelController - GET /api/hotels
+2026-04-03 00:14:00 [http-nio-8081-exec-9] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: krish@gmail.com
+2026-04-03 00:14:00 [http-nio-8081-exec-5] INFO  c.h.h.service.HotelService - Fetched 50 hotels
+2026-04-03 00:14:00 [http-nio-8081-exec-3] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: krish@gmail.com
+2026-04-03 00:14:00 [http-nio-8081-exec-9] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: krish@gmail.com for URI: /api/hotels/locations
+2026-04-03 00:14:00 [http-nio-8081-exec-3] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: krish@gmail.com for URI: /api/hotels
+2026-04-03 00:14:00 [http-nio-8081-exec-3] INFO  c.h.h.controller.HotelController - GET /api/hotels
+2026-04-03 00:14:00 [http-nio-8081-exec-3] INFO  c.h.h.service.HotelService - Fetched 50 hotels
+2026-04-03 00:18:42 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-03 00:18:42 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-04-03 00:18:42 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-04-03 00:18:52 [main] INFO  c.h.h.HotelBackendApplication - Starting HotelBackendApplication using Java 21.0.10 with PID 18332 (C:\Users\girid\Desktop\HotelBooking\hotel-backend\target\classes started by girid in C:\Users\girid\Desktop\HotelBooking\hotel-backend)
+2026-04-03 00:18:52 [main] DEBUG c.h.h.HotelBackendApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-04-03 00:18:52 [main] INFO  c.h.h.HotelBackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-03 00:18:52 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-03 00:18:52 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 43 ms. Found 5 JPA repository interfaces.
+2026-04-03 00:18:53 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-04-03 00:18:53 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-03 00:18:53 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-04-03 00:18:53 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-03 00:18:53 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 943 ms
+2026-04-03 00:18:53 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-03 00:18:53 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+2026-04-03 00:18:53 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-04-03 00:18:53 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-03 00:18:53 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-03 00:18:53 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@734f8317
+2026-04-03 00:18:53 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-03 00:18:53 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-03 00:18:54 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-03 00:18:54 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-03 00:18:54 [main] DEBUG c.h.h.config.JWTAuthFilter - Filter 'JWTAuthFilter' configured for use
+2026-04-03 00:18:54 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-03 00:18:55 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-03 00:18:55 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1786e7a5, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7bdfd631, org.springframework.security.web.context.SecurityContextHolderFilter@6a94ccde, org.springframework.security.web.header.HeaderWriterFilter@37b3e8b3, org.springframework.web.filter.CorsFilter@78f9b1ec, org.springframework.security.web.authentication.logout.LogoutFilter@627ceaf, com.hotel.hotel_backend.config.JWTAuthFilter@248ba4fc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@37bdd4b1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@656605e7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@10e7192, org.springframework.security.web.session.SessionManagementFilter@28f6137b, org.springframework.security.web.access.ExceptionTranslationFilter@140db646, org.springframework.security.web.access.intercept.AuthorizationFilter@780296e2]
+2026-04-03 00:18:55 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path ''
+2026-04-03 00:18:55 [main] INFO  c.h.h.HotelBackendApplication - Started HotelBackendApplication in 3.699 seconds (process running for 3.917)
+2026-04-03 00:20:35 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-03 00:20:35 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-04-03 00:20:35 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2026-04-03 00:20:35 [http-nio-8081-exec-2] WARN  o.s.w.s.h.HandlerMappingIntrospector - Cache miss for REQUEST dispatch to '/api/auth/login' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
+2026-04-03 00:20:35 [http-nio-8081-exec-2] INFO  c.h.h.controller.AuthController - POST /api/auth/login - email: krish@gmail.com
+2026-04-03 00:20:35 [http-nio-8081-exec-2] INFO  c.h.h.service.UserService - Login attempt for email: krish@gmail.com
+2026-04-03 00:20:35 [http-nio-8081-exec-2] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: krish@gmail.com
+2026-04-03 00:20:36 [http-nio-8081-exec-2] INFO  c.h.h.service.UserService - User logged in successfully: krish@gmail.com
+2026-04-03 00:20:36 [http-nio-8081-exec-4] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: krish@gmail.com
+2026-04-03 00:20:36 [http-nio-8081-exec-3] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: krish@gmail.com
+2026-04-03 00:20:36 [http-nio-8081-exec-4] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: krish@gmail.com for URI: /api/hotels/locations
+2026-04-03 00:20:36 [http-nio-8081-exec-3] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: krish@gmail.com for URI: /api/hotels
+2026-04-03 00:20:36 [http-nio-8081-exec-3] INFO  c.h.h.controller.HotelController - GET /api/hotels
+2026-04-03 00:20:36 [http-nio-8081-exec-5] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: krish@gmail.com
+2026-04-03 00:20:36 [http-nio-8081-exec-5] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: krish@gmail.com for URI: /api/hotels/locations
+2026-04-03 00:20:36 [http-nio-8081-exec-3] INFO  c.h.h.service.HotelService - Fetched 50 hotels
+2026-04-03 00:20:36 [http-nio-8081-exec-6] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: krish@gmail.com
+2026-04-03 00:20:36 [http-nio-8081-exec-6] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: krish@gmail.com for URI: /api/hotels
+2026-04-03 00:20:36 [http-nio-8081-exec-6] INFO  c.h.h.controller.HotelController - GET /api/hotels
+2026-04-03 00:20:36 [http-nio-8081-exec-6] INFO  c.h.h.service.HotelService - Fetched 50 hotels
+2026-04-03 00:20:43 [http-nio-8081-exec-9] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: krish@gmail.com
+2026-04-03 00:20:43 [http-nio-8081-exec-9] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: krish@gmail.com for URI: /api/hotels/1
+2026-04-03 00:20:43 [http-nio-8081-exec-9] INFO  c.h.h.controller.HotelController - GET /api/hotels/1
+2026-04-03 00:20:43 [http-nio-8081-exec-10] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: krish@gmail.com
+2026-04-03 00:20:43 [http-nio-8081-exec-10] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: krish@gmail.com for URI: /api/hotels/1
+2026-04-03 00:20:43 [http-nio-8081-exec-10] INFO  c.h.h.controller.HotelController - GET /api/hotels/1
+2026-04-03 00:20:46 [http-nio-8081-exec-2] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: krish@gmail.com
+2026-04-03 00:20:46 [http-nio-8081-exec-2] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: krish@gmail.com for URI: /api/bookings
+2026-04-03 00:20:46 [http-nio-8081-exec-2] INFO  c.h.h.controller.BookingController - POST /api/bookings - user: 3
+2026-04-03 00:20:46 [http-nio-8081-exec-2] INFO  c.h.h.service.BookingService - Creating booking for user 3 room 2
+2026-04-03 00:20:46 [http-nio-8081-exec-2] WARN  c.h.h.e.GlobalExceptionHandler - Business exception: Check-in date cannot be in the past
+2026-04-03 00:21:00 [http-nio-8081-exec-4] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: krish@gmail.com
+2026-04-03 00:21:00 [http-nio-8081-exec-4] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: krish@gmail.com for URI: /api/bookings
+2026-04-03 00:21:00 [http-nio-8081-exec-4] INFO  c.h.h.controller.BookingController - POST /api/bookings - user: 3
+2026-04-03 00:21:00 [http-nio-8081-exec-4] INFO  c.h.h.service.BookingService - Creating booking for user 3 room 2
+2026-04-03 00:21:00 [http-nio-8081-exec-4] INFO  c.h.h.service.BookingService - Booking created in PENDING_PAYMENT: 13 for user: 3
+2026-04-03 00:21:00 [http-nio-8081-exec-3] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: krish@gmail.com
+2026-04-03 00:21:00 [http-nio-8081-exec-3] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: krish@gmail.com for URI: /api/payments/checkout/13
+2026-04-03 00:21:00 [http-nio-8081-exec-3] INFO  c.h.h.controller.PaymentController - POST /api/payments/checkout/13
+2026-04-03 00:21:02 [http-nio-8081-exec-3] INFO  c.h.h.service.PaymentService - Stripe Session created: cs_test_a18zqcGK8QOg0yxRZOm4xmQ7kp3qpgjfxhkrnmksqXDX57icatmhufXbru for booking ID: 13
+2026-04-03 00:21:05 [task-1] INFO  c.h.h.service.EmailService - Booking confirmation email sent to: krish@gmail.com for booking: 13
+2026-04-03 00:23:33 [http-nio-8081-exec-10] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: krish@gmail.com
+2026-04-03 00:23:33 [http-nio-8081-exec-1] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: krish@gmail.com
+2026-04-03 00:23:33 [http-nio-8081-exec-1] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: krish@gmail.com for URI: /api/payments/verify
+2026-04-03 00:23:33 [http-nio-8081-exec-10] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: krish@gmail.com for URI: /api/payments/verify
+2026-04-03 00:23:33 [http-nio-8081-exec-1] INFO  c.h.h.controller.PaymentController - POST /api/payments/verify/cs_test_a18zqcGK8QOg0yxRZOm4xmQ7kp3qpgjfxhkrnmksqXDX57icatmhufXbru
+2026-04-03 00:23:33 [http-nio-8081-exec-10] INFO  c.h.h.controller.PaymentController - POST /api/payments/verify/cs_test_a18zqcGK8QOg0yxRZOm4xmQ7kp3qpgjfxhkrnmksqXDX57icatmhufXbru
+2026-04-03 00:23:33 [http-nio-8081-exec-2] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: krish@gmail.com
+2026-04-03 00:23:33 [http-nio-8081-exec-4] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: krish@gmail.com
+2026-04-03 00:23:33 [http-nio-8081-exec-2] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: krish@gmail.com for URI: /api/hotels
+2026-04-03 00:23:33 [http-nio-8081-exec-2] INFO  c.h.h.controller.HotelController - GET /api/hotels
+2026-04-03 00:23:33 [http-nio-8081-exec-4] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: krish@gmail.com for URI: /api/hotels/locations
+2026-04-03 00:23:33 [http-nio-8081-exec-5] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: krish@gmail.com
+2026-04-03 00:23:33 [http-nio-8081-exec-2] INFO  c.h.h.service.HotelService - Fetched 50 hotels
+2026-04-03 00:23:33 [http-nio-8081-exec-5] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: krish@gmail.com for URI: /api/hotels/locations
+2026-04-03 00:23:33 [http-nio-8081-exec-3] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: krish@gmail.com
+2026-04-03 00:23:33 [http-nio-8081-exec-6] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: krish@gmail.com
+2026-04-03 00:23:33 [http-nio-8081-exec-3] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: krish@gmail.com for URI: /api/hotels
+2026-04-03 00:23:33 [http-nio-8081-exec-6] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: krish@gmail.com for URI: /api/hotels/locations
+2026-04-03 00:23:33 [http-nio-8081-exec-3] INFO  c.h.h.controller.HotelController - GET /api/hotels
+2026-04-03 00:23:33 [http-nio-8081-exec-8] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: krish@gmail.com
+2026-04-03 00:23:33 [http-nio-8081-exec-3] INFO  c.h.h.service.HotelService - Fetched 50 hotels
+2026-04-03 00:23:33 [http-nio-8081-exec-8] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: krish@gmail.com for URI: /api/hotels/locations
+2026-04-03 00:23:33 [http-nio-8081-exec-9] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: krish@gmail.com
+2026-04-03 00:23:33 [http-nio-8081-exec-9] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: krish@gmail.com for URI: /api/hotels
+2026-04-03 00:23:33 [http-nio-8081-exec-9] INFO  c.h.h.controller.HotelController - GET /api/hotels
+2026-04-03 00:23:33 [http-nio-8081-exec-9] INFO  c.h.h.service.HotelService - Fetched 50 hotels
+2026-04-03 00:23:33 [http-nio-8081-exec-7] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: krish@gmail.com
+2026-04-03 00:23:33 [http-nio-8081-exec-7] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: krish@gmail.com for URI: /api/hotels
+2026-04-03 00:23:33 [http-nio-8081-exec-7] INFO  c.h.h.controller.HotelController - GET /api/hotels
+2026-04-03 00:23:33 [http-nio-8081-exec-7] INFO  c.h.h.service.HotelService - Fetched 50 hotels
+2026-04-03 00:23:33 [http-nio-8081-exec-10] INFO  c.h.h.service.PaymentService - Booking 13 marked as CONFIRMED after payment. Sending email...
+2026-04-03 00:23:33 [http-nio-8081-exec-1] INFO  c.h.h.service.PaymentService - Booking 13 marked as CONFIRMED after payment. Sending email...
+2026-04-03 00:23:33 [task-2] ERROR o.s.a.i.SimpleAsyncUncaughtExceptionHandler - Unexpected exception occurred invoking async method: public void com.hotel.hotel_backend.service.EmailService.sendBookingConfirmation(java.lang.String,java.lang.String,com.hotel.hotel_backend.entity.Booking)
+org.hibernate.LazyInitializationException: could not initialize proxy [com.hotel.hotel_backend.entity.Hotel#1] - no Session
+	at org.hibernate.proxy.AbstractLazyInitializer.initialize(AbstractLazyInitializer.java:164)
+	at org.hibernate.proxy.AbstractLazyInitializer.getImplementation(AbstractLazyInitializer.java:310)
+	at org.hibernate.proxy.pojo.bytebuddy.ByteBuddyInterceptor.intercept(ByteBuddyInterceptor.java:44)
+	at org.hibernate.proxy.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:102)
+	at com.hotel.hotel_backend.entity.Hotel$HibernateProxy$6DvM2GwS.getName(Unknown Source)
+	at com.hotel.hotel_backend.service.EmailService.buildBookingConfirmationHtml(EmailService.java:141)
+	at com.hotel.hotel_backend.service.EmailService.sendBookingConfirmation(EmailService.java:51)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:352)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-04-03 00:23:33 [task-3] ERROR o.s.a.i.SimpleAsyncUncaughtExceptionHandler - Unexpected exception occurred invoking async method: public void com.hotel.hotel_backend.service.EmailService.sendBookingConfirmation(java.lang.String,java.lang.String,com.hotel.hotel_backend.entity.Booking)
+org.hibernate.LazyInitializationException: could not initialize proxy [com.hotel.hotel_backend.entity.Hotel#1] - no Session
+	at org.hibernate.proxy.AbstractLazyInitializer.initialize(AbstractLazyInitializer.java:164)
+	at org.hibernate.proxy.AbstractLazyInitializer.getImplementation(AbstractLazyInitializer.java:310)
+	at org.hibernate.proxy.pojo.bytebuddy.ByteBuddyInterceptor.intercept(ByteBuddyInterceptor.java:44)
+	at org.hibernate.proxy.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:102)
+	at com.hotel.hotel_backend.entity.Hotel$HibernateProxy$6DvM2GwS.getName(Unknown Source)
+	at com.hotel.hotel_backend.service.EmailService.buildBookingConfirmationHtml(EmailService.java:141)
+	at com.hotel.hotel_backend.service.EmailService.sendBookingConfirmation(EmailService.java:51)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:352)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-04-03 00:23:33 [http-nio-8081-exec-2] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: krish@gmail.com
+2026-04-03 00:23:33 [http-nio-8081-exec-2] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: krish@gmail.com for URI: /api/bookings/my
+2026-04-03 00:23:33 [http-nio-8081-exec-2] INFO  c.h.h.controller.BookingController - GET /api/bookings/my - user: 3
+2026-04-03 00:23:33 [http-nio-8081-exec-6] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: krish@gmail.com
+2026-04-03 00:23:33 [http-nio-8081-exec-6] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: krish@gmail.com for URI: /api/bookings/my
+2026-04-03 00:23:33 [http-nio-8081-exec-6] INFO  c.h.h.controller.BookingController - GET /api/bookings/my - user: 3
+2026-04-03 00:24:20 [http-nio-8081-exec-8] INFO  c.h.h.service.UserService - Forgot password request for email: girideveloper07@gmail.com
+2026-04-03 00:24:25 [task-4] INFO  c.h.h.service.EmailService - Password reset email sent to: girideveloper07@gmail.com
+2026-04-03 00:24:32 [http-nio-8081-exec-9] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: girideveloper07@gmail.com
+2026-04-03 00:24:32 [http-nio-8081-exec-7] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: girideveloper07@gmail.com
+2026-04-03 00:24:32 [http-nio-8081-exec-7] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: girideveloper07@gmail.com for URI: /api/hotels/locations
+2026-04-03 00:24:32 [http-nio-8081-exec-9] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: girideveloper07@gmail.com for URI: /api/hotels
+2026-04-03 00:24:32 [http-nio-8081-exec-9] INFO  c.h.h.controller.HotelController - GET /api/hotels
+2026-04-03 00:24:32 [http-nio-8081-exec-10] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: girideveloper07@gmail.com
+2026-04-03 00:24:32 [http-nio-8081-exec-10] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: girideveloper07@gmail.com for URI: /api/hotels/locations
+2026-04-03 00:24:32 [http-nio-8081-exec-9] INFO  c.h.h.service.HotelService - Fetched 50 hotels
+2026-04-03 00:24:32 [http-nio-8081-exec-1] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: girideveloper07@gmail.com
+2026-04-03 00:24:32 [http-nio-8081-exec-1] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: girideveloper07@gmail.com for URI: /api/hotels
+2026-04-03 00:24:32 [http-nio-8081-exec-1] INFO  c.h.h.controller.HotelController - GET /api/hotels
+2026-04-03 00:24:32 [http-nio-8081-exec-1] INFO  c.h.h.service.HotelService - Fetched 50 hotels
+2026-04-03 00:25:16 [http-nio-8081-exec-8] INFO  c.h.h.service.UserService - Resetting password using token
+2026-04-03 00:25:16 [http-nio-8081-exec-8] INFO  c.h.h.service.UserService - Password reset successful for user: girideveloper07@gmail.com
+2026-04-03 00:25:31 [http-nio-8081-exec-9] INFO  c.h.h.controller.AuthController - POST /api/auth/login - email: girideveloper07@gmail.com
+2026-04-03 00:25:31 [http-nio-8081-exec-9] INFO  c.h.h.service.UserService - Login attempt for email: girideveloper07@gmail.com
+2026-04-03 00:25:31 [http-nio-8081-exec-9] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: girideveloper07@gmail.com
+2026-04-03 00:25:31 [http-nio-8081-exec-9] INFO  c.h.h.service.UserService - User logged in successfully: girideveloper07@gmail.com
+2026-04-03 00:25:31 [http-nio-8081-exec-1] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: girideveloper07@gmail.com
+2026-04-03 00:25:31 [http-nio-8081-exec-10] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: girideveloper07@gmail.com
+2026-04-03 00:25:31 [http-nio-8081-exec-1] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: girideveloper07@gmail.com for URI: /api/hotels/locations
+2026-04-03 00:25:31 [http-nio-8081-exec-10] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: girideveloper07@gmail.com for URI: /api/hotels
+2026-04-03 00:25:31 [http-nio-8081-exec-10] INFO  c.h.h.controller.HotelController - GET /api/hotels
+2026-04-03 00:25:31 [http-nio-8081-exec-4] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: girideveloper07@gmail.com
+2026-04-03 00:25:31 [http-nio-8081-exec-10] INFO  c.h.h.service.HotelService - Fetched 50 hotels
+2026-04-03 00:25:31 [http-nio-8081-exec-5] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: girideveloper07@gmail.com
+2026-04-03 00:25:31 [http-nio-8081-exec-4] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: girideveloper07@gmail.com for URI: /api/hotels/locations
+2026-04-03 00:25:31 [http-nio-8081-exec-5] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: girideveloper07@gmail.com for URI: /api/hotels
+2026-04-03 00:25:31 [http-nio-8081-exec-5] INFO  c.h.h.controller.HotelController - GET /api/hotels
+2026-04-03 00:25:31 [http-nio-8081-exec-5] INFO  c.h.h.service.HotelService - Fetched 50 hotels
+2026-04-03 00:25:37 [http-nio-8081-exec-2] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: girideveloper07@gmail.com
+2026-04-03 00:25:37 [http-nio-8081-exec-2] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: girideveloper07@gmail.com for URI: /api/bookings/my
+2026-04-03 00:25:37 [http-nio-8081-exec-2] INFO  c.h.h.controller.BookingController - GET /api/bookings/my - user: 4
+2026-04-03 00:25:37 [http-nio-8081-exec-6] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: girideveloper07@gmail.com
+2026-04-03 00:25:37 [http-nio-8081-exec-6] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: girideveloper07@gmail.com for URI: /api/bookings/my
+2026-04-03 00:25:37 [http-nio-8081-exec-6] INFO  c.h.h.controller.BookingController - GET /api/bookings/my - user: 4
+2026-04-03 00:25:39 [http-nio-8081-exec-8] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: girideveloper07@gmail.com
+2026-04-03 00:25:39 [http-nio-8081-exec-3] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: girideveloper07@gmail.com
+2026-04-03 00:25:39 [http-nio-8081-exec-3] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: girideveloper07@gmail.com for URI: /api/hotels
+2026-04-03 00:25:39 [http-nio-8081-exec-8] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: girideveloper07@gmail.com for URI: /api/hotels/locations
+2026-04-03 00:25:39 [http-nio-8081-exec-3] INFO  c.h.h.controller.HotelController - GET /api/hotels
+2026-04-03 00:25:39 [http-nio-8081-exec-3] INFO  c.h.h.service.HotelService - Fetched 50 hotels
+2026-04-03 00:25:39 [http-nio-8081-exec-7] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: girideveloper07@gmail.com
+2026-04-03 00:25:39 [http-nio-8081-exec-9] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: girideveloper07@gmail.com
+2026-04-03 00:25:39 [http-nio-8081-exec-7] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: girideveloper07@gmail.com for URI: /api/hotels/locations
+2026-04-03 00:25:39 [http-nio-8081-exec-9] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: girideveloper07@gmail.com for URI: /api/hotels
+2026-04-03 00:25:39 [http-nio-8081-exec-9] INFO  c.h.h.controller.HotelController - GET /api/hotels
+2026-04-03 00:25:39 [http-nio-8081-exec-9] INFO  c.h.h.service.HotelService - Fetched 50 hotels
+2026-04-03 00:25:41 [http-nio-8081-exec-1] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: girideveloper07@gmail.com
+2026-04-03 00:25:41 [http-nio-8081-exec-1] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: girideveloper07@gmail.com for URI: /api/bookings/my
+2026-04-03 00:25:41 [http-nio-8081-exec-1] INFO  c.h.h.controller.BookingController - GET /api/bookings/my - user: 4
+2026-04-03 00:25:41 [http-nio-8081-exec-10] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: girideveloper07@gmail.com
+2026-04-03 00:25:41 [http-nio-8081-exec-10] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: girideveloper07@gmail.com for URI: /api/bookings/my
+2026-04-03 00:25:41 [http-nio-8081-exec-10] INFO  c.h.h.controller.BookingController - GET /api/bookings/my - user: 4
+2026-04-03 00:25:43 [http-nio-8081-exec-5] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: girideveloper07@gmail.com
+2026-04-03 00:25:43 [http-nio-8081-exec-4] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: girideveloper07@gmail.com
+2026-04-03 00:25:43 [http-nio-8081-exec-4] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: girideveloper07@gmail.com for URI: /api/hotels
+2026-04-03 00:25:43 [http-nio-8081-exec-5] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: girideveloper07@gmail.com for URI: /api/hotels/locations
+2026-04-03 00:25:43 [http-nio-8081-exec-4] INFO  c.h.h.controller.HotelController - GET /api/hotels
+2026-04-03 00:25:43 [http-nio-8081-exec-4] INFO  c.h.h.service.HotelService - Fetched 50 hotels
+2026-04-03 00:25:43 [http-nio-8081-exec-2] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: girideveloper07@gmail.com
+2026-04-03 00:25:43 [http-nio-8081-exec-6] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: girideveloper07@gmail.com
+2026-04-03 00:25:43 [http-nio-8081-exec-2] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: girideveloper07@gmail.com for URI: /api/hotels/locations
+2026-04-03 00:25:43 [http-nio-8081-exec-6] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: girideveloper07@gmail.com for URI: /api/hotels
+2026-04-03 00:25:43 [http-nio-8081-exec-6] INFO  c.h.h.controller.HotelController - GET /api/hotels
+2026-04-03 00:25:43 [http-nio-8081-exec-6] INFO  c.h.h.service.HotelService - Fetched 50 hotels
+2026-04-03 00:25:48 [http-nio-8081-exec-7] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: girideveloper07@gmail.com
+2026-04-03 00:25:48 [http-nio-8081-exec-7] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: girideveloper07@gmail.com for URI: /api/hotels/3
+2026-04-03 00:25:48 [http-nio-8081-exec-7] INFO  c.h.h.controller.HotelController - GET /api/hotels/3
+2026-04-03 00:25:48 [http-nio-8081-exec-9] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: girideveloper07@gmail.com
+2026-04-03 00:25:48 [http-nio-8081-exec-9] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: girideveloper07@gmail.com for URI: /api/hotels/3
+2026-04-03 00:25:48 [http-nio-8081-exec-9] INFO  c.h.h.controller.HotelController - GET /api/hotels/3
+2026-04-03 00:25:55 [http-nio-8081-exec-1] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: girideveloper07@gmail.com
+2026-04-03 00:25:55 [http-nio-8081-exec-1] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: girideveloper07@gmail.com for URI: /api/bookings
+2026-04-03 00:25:55 [http-nio-8081-exec-1] INFO  c.h.h.controller.BookingController - POST /api/bookings - user: 4
+2026-04-03 00:25:55 [http-nio-8081-exec-1] INFO  c.h.h.service.BookingService - Creating booking for user 4 room 127
+2026-04-03 00:25:55 [http-nio-8081-exec-1] WARN  c.h.h.e.GlobalExceptionHandler - Business exception: Check-in date cannot be in the past
+2026-04-03 00:26:04 [http-nio-8081-exec-10] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: girideveloper07@gmail.com
+2026-04-03 00:26:04 [http-nio-8081-exec-10] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: girideveloper07@gmail.com for URI: /api/bookings
+2026-04-03 00:26:04 [http-nio-8081-exec-10] INFO  c.h.h.controller.BookingController - POST /api/bookings - user: 4
+2026-04-03 00:26:04 [http-nio-8081-exec-10] INFO  c.h.h.service.BookingService - Creating booking for user 4 room 127
+2026-04-03 00:26:04 [http-nio-8081-exec-10] INFO  c.h.h.service.BookingService - Booking created in PENDING_PAYMENT: 14 for user: 4
+2026-04-03 00:26:04 [http-nio-8081-exec-4] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: girideveloper07@gmail.com
+2026-04-03 00:26:04 [http-nio-8081-exec-4] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: girideveloper07@gmail.com for URI: /api/payments/checkout/14
+2026-04-03 00:26:04 [http-nio-8081-exec-4] INFO  c.h.h.controller.PaymentController - POST /api/payments/checkout/14
+2026-04-03 00:26:05 [http-nio-8081-exec-4] INFO  c.h.h.service.PaymentService - Stripe Session created: cs_test_a10X2aftkuujoBOb1o3wujRXIDaeHiMOPkxsUneXmtDstJCo7yU1LloHUs for booking ID: 14
+2026-04-03 00:26:09 [task-5] INFO  c.h.h.service.EmailService - Booking confirmation email sent to: girideveloper07@gmail.com for booking: 14
+2026-04-03 00:26:16 [http-nio-8081-exec-6] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: girideveloper07@gmail.com
+2026-04-03 00:26:16 [http-nio-8081-exec-2] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: girideveloper07@gmail.com
+2026-04-03 00:26:16 [http-nio-8081-exec-6] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: girideveloper07@gmail.com for URI: /api/payments/verify
+2026-04-03 00:26:16 [http-nio-8081-exec-2] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: girideveloper07@gmail.com for URI: /api/payments/verify
+2026-04-03 00:26:16 [http-nio-8081-exec-6] INFO  c.h.h.controller.PaymentController - POST /api/payments/verify/cs_test_a10X2aftkuujoBOb1o3wujRXIDaeHiMOPkxsUneXmtDstJCo7yU1LloHUs
+2026-04-03 00:26:16 [http-nio-8081-exec-2] INFO  c.h.h.controller.PaymentController - POST /api/payments/verify/cs_test_a10X2aftkuujoBOb1o3wujRXIDaeHiMOPkxsUneXmtDstJCo7yU1LloHUs
+2026-04-03 00:26:16 [http-nio-8081-exec-6] INFO  c.h.h.service.PaymentService - Booking 14 marked as CONFIRMED after payment. Sending email...
+2026-04-03 00:26:16 [http-nio-8081-exec-3] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: girideveloper07@gmail.com
+2026-04-03 00:26:16 [task-6] ERROR o.s.a.i.SimpleAsyncUncaughtExceptionHandler - Unexpected exception occurred invoking async method: public void com.hotel.hotel_backend.service.EmailService.sendBookingConfirmation(java.lang.String,java.lang.String,com.hotel.hotel_backend.entity.Booking)
+org.hibernate.LazyInitializationException: could not initialize proxy [com.hotel.hotel_backend.entity.Hotel#3] - no Session
+	at org.hibernate.proxy.AbstractLazyInitializer.initialize(AbstractLazyInitializer.java:164)
+	at org.hibernate.proxy.AbstractLazyInitializer.getImplementation(AbstractLazyInitializer.java:310)
+	at org.hibernate.proxy.pojo.bytebuddy.ByteBuddyInterceptor.intercept(ByteBuddyInterceptor.java:44)
+	at org.hibernate.proxy.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:102)
+	at com.hotel.hotel_backend.entity.Hotel$HibernateProxy$6DvM2GwS.getName(Unknown Source)
+	at com.hotel.hotel_backend.service.EmailService.buildBookingConfirmationHtml(EmailService.java:141)
+	at com.hotel.hotel_backend.service.EmailService.sendBookingConfirmation(EmailService.java:51)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:352)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-04-03 00:26:16 [http-nio-8081-exec-3] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: girideveloper07@gmail.com for URI: /api/bookings/my
+2026-04-03 00:26:16 [http-nio-8081-exec-3] INFO  c.h.h.controller.BookingController - GET /api/bookings/my - user: 4
+2026-04-03 00:26:16 [http-nio-8081-exec-8] DEBUG c.h.h.s.CustomUserDetailsService - Loading user by email: girideveloper07@gmail.com
+2026-04-03 00:26:16 [http-nio-8081-exec-8] DEBUG c.h.h.config.JWTAuthFilter - Authenticated user: girideveloper07@gmail.com for URI: /api/bookings/my
+2026-04-03 00:26:16 [http-nio-8081-exec-8] INFO  c.h.h.controller.BookingController - GET /api/bookings/my - user: 4
+2026-04-03 00:26:47 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-03 00:26:47 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-04-03 00:26:47 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
